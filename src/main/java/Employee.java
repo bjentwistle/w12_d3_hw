@@ -21,13 +21,21 @@ public abstract class Employee {
     }
 
     public double raiseSalary(double raise) {
-        this.salary += raise;
+        if (raise > 0 ) {
+            this.salary += raise;
+        }
         return salary;
     }
 
     public double payBonus() {
-        double bonus = this.salary * 0.01;
-        return bonus;
+        return this.salary * 0.01;
+    }
+
+    public String setName(String newName){
+        if(newName != null) {
+            this.name = newName;
+        }
+        return this.name;
     }
 
 }

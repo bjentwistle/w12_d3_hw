@@ -35,12 +35,13 @@ public class DirectorTest {
 
     @Test
     public void canRaiseSalary() {
+        assertEquals(150000, director.raiseSalary(-50000), 0.0);//checking for negative input values
         assertEquals(200000, director.raiseSalary(50000), 0.0);
     }
 
     @Test
     public void canPayBonus() {
-        assertEquals(1500, director.payBonus(), 0.0);
+        assertEquals(3000, director.payBonus(), 0.0);
     }
 
     @Test
