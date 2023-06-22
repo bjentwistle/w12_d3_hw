@@ -1,6 +1,6 @@
 public class Manager extends Employee {
 
-    public String deptName;
+    private String deptName;
 
     public Manager (String name, String niNumber, double salary, String deptName) {
         super(name, niNumber, salary);

@@ -7,8 +7,14 @@ public class Director extends Manager{
         this.budget = budget;
     }
 
+//    public double getBudget() {
+//        return this.budget;
+//    }
+//
+
+
     public double getBudget() {
-        return this.budget;
+        return budget;
     }
 
     @Override
